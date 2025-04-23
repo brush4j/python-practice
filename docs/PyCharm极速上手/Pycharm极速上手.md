@@ -2,15 +2,22 @@
 新建干净的虚拟环境
 
 ![img.png](img.png)
-pycharm激活虚拟环境并使用虚拟环境下的pip
 
+进入当前项目的虚拟空间venv
 ```shell
 cd E:\github\python-practice\matplotlib-practice\.venv\Scripts
+#or 根据你实际项目中的.venv而定
+cd E:\github\python-practice\.venv\Scripts
+```
+
+激活虚拟环境
+```shell
+
 E:\github\python-practice\matplotlib-practice\.venv\Scripts>activate.bat
 
 ```
 
-pip升级
+使用虚拟环境下的pip，pip升级
 ```shell
 
 (.venv) E:\github\python-practice\matplotlib-practice\.venv\Scripts>pip list
@@ -34,7 +41,8 @@ Package Version
 ------- -------
 pip     25.0.1
 ```
-将依赖安装至当前的虚拟局部环境
+
+安装pip依赖至当前的虚拟局部环境
 ```shell
 (.venv) E:\github\python-practice\matplotlib-practice\.venv\Scripts>pip install matplotlib
 
@@ -63,6 +71,6 @@ tzdata          2025.1
 
 ```
 
-最后记得切换你的python环境为当前的虚拟环境，而不是全局环境
+最后记得确定你当前的python环境为虚拟环境，而不是全局环境
 
 ![img_1.png](img_1.png)
